@@ -23,7 +23,7 @@
 		<input bind:value={domain} size="50"><button on:click={handleSubmit(domain)}>New</button><br>
 		{#if myDomain}
 	  		<QrCode value={myDomain} />
-			  <script>myDomain = "";</script>
+			  
 	  	{/if}
 	  
 	</div>
