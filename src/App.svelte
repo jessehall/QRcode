@@ -1,6 +1,6 @@
 <script>
 	import QrCode from "svelte-qrcode";
-	let domain = "https://google.com";
+	let domain = "https://www.swervecreative.com";
 	let name = 'jesse';
 	let myDomain = "";
 	function handleSubmit(e) {
