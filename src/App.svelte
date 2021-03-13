@@ -1,6 +1,6 @@
 <script>
 	import QrCode from "svelte-qrcode";
-	let domain = "https://www.swervecreative.com";
+	let domain = "https://google.com";
 	let name = 'jesse';
 	let myDomain = "";
 	function handleSubmit(e) {
@@ -20,7 +20,7 @@
 			Dynamically Generate a QR code:
 		</h1>
 		<p>Type in a URL and hit enter to generat a QR code:</p>
-		<input bind:value={domain} size="50"><button on:click={handleSubmit(domain)}>New</button><br>
+		<input bind:value={domain} size="50"><button on:click={handleSubmit(domain)}>Create QR code</button><br>
 		{#if myDomain}
 	  		<QrCode value={myDomain} />
 			  
@@ -29,7 +29,7 @@
 	</div>
 
 	<!-- <input bind:value={domain}> -->
-	<h1>Hello {domain}!</h1>
+	<h1>Domain: {domain}</h1>
 </main>
 
 <style>
